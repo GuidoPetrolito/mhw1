@@ -1,0 +1,353 @@
+body {
+    margin: 0;
+}
+@media (max-width: 500px) {
+    body {
+      font-size: 14px;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 75px;
+    width: 100%;
+}
+
+#menu {
+    display: none;
+    /*margin: 10px 10px;*/
+    align-self:self-end;
+    margin-right: 10px;
+    margin-bottom: 320px;
+}
+
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+  }
+
+@media (max-width: 500px) {
+    nav {
+        display: none;
+    }
+
+    /*nav {
+        display: flex;
+        display: none;
+        justify-content: end;
+        align-items: end;
+        background-color: whitesmoke;
+        height: 50px;
+        width: 100%;
+    }*/
+
+    a.button {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+}
+
+a.button {
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 24px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+a.button:hover {
+    background-color: white;
+    color: black;
+}
+
+header {
+    /*background-image: url(https://www.optimagazine.com/wp-content/uploads/2023/01/harry-potter-e-la-camera-dei-segreti.jpg);*/
+    background-image: url(https://wallpapercave.com/wp/wp3067418.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+
+@media (max-width: 500px) {
+    header {
+      line-height: 1.2;
+      background-position:calc(27%);
+    }
+  }
+
+#overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+header h1 {
+    color: whitesmoke;
+    font-size: 75px;
+    /*font-family: "HarryPotter", serif;*/
+    /*font-family: 'Lobster', cursive;*/
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    z-index: 1;
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+
+    padding-bottom: 10px;
+    max-width: 780px;
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        margin-bottom: 50px;
+        font-size: 3em;
+    }
+}
+
+/*@font-face {
+    font-family: "HarryPotter";
+    src: url(HarryPotter/HARRYP__.TTF);
+}*/
+
+footer {
+    height: 75px;
+    width: 100%;
+    background-color: black;
+    padding-top: 15px;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    footer {
+        height: 50px;
+    }
+}
+
+#sectionProfile {
+    display: flex;
+    justify-content: center;
+
+    width: 300px;
+    height: 100px;
+    margin: auto auto;
+
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#sectionProfile profile {
+    background-color: whitesmoke;
+    margin-top: -50px;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    border: 3px solid black;
+    position: absolute;
+}
+
+#sectionProfile img {
+    width: 95%;
+    height: 100%;
+    border-radius: 100px;
+}
+
+h1.name {
+    font-size: 10px;
+    margin-bottom: 0;
+    margin-top: 3px;
+    padding: 0;
+
+    font-family: 'Merriweather', serif;
+    font-weight: bolder;
+    font-style: normal;
+    color: black;
+}
+
+a.access {
+    font-size: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+
+    font-family: 'Tiro Devanagari Hindi', serif;
+    font-style: italic;
+    font-weight: normal;
+    color: black;
+}
+
+a.footer {
+    font-weight: bolder;
+    color: whitesmoke;
+    font-size: 50px;
+    font-family: 'Anton', monospace;
+    font-weight: bolder;
+    font-style: normal;
+    letter-spacing: 5px;
+}
+
+@media (max-width: 500px) {
+    a.footer {
+        font-size: 1.5em;
+    }
+}
+
+section {
+    width: auto;
+    height: auto;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.details {
+    display: flex;
+    /*margin: 60px auto;*/
+    /* width: 66.67%; */
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    flex-direction: row;
+    /*border: 3px solid royalblue;*/
+    justify-content: center;
+    /*align-items: center;*/
+}
+
+@media (max-width: 500px) {
+    #details {
+      flex-direction: column;
+    }
+  }
+
+.imgDetails {
+    height: auto;
+    width: 100%;
+    padding: 0;
+}
+
+.item {
+    width: 66.67%;
+    height: auto;
+    padding: 0;
+    /*border: 3px solid black;*/
+}
+
+h1.titolo {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 24px;
+    font-style: normal;
+    color: black;
+    
+    margin: 0;
+    padding: 0;
+}
+
+a.valutazione {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 12px;
+    font-style: normal;
+    color: black;
+
+    margin: 0 0;
+}
+
+p.storia {
+    margin: 20px 0px;
+    font-family: 'Courgette', cursive;
+    font-style: normal;
+    color: black;
+
+}
+
+a.storia {
+    font-family: 'Courgette', cursive;
+    font-size: 24px;
+    font-weight: bolder;
+    font-style: normal;
+    color: black;
+
+}
+
+p.trama {
+    font-family: 'Shantell Sans', cursive;
+    font-style: normal;
+    color: black;
+
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+a.trama {
+    font-family: 'Shantell Sans', cursive;
+    font-size: 24px;
+    font-weight: bolder;
+    font-style: normal;
+    color: black;
+
+}
+
+@media (max-width: 500px) {
+    h1.titolo {
+        font-size: 13px;
+    }
+
+    a.valutazione {
+        font-size: 12px;
+    }
+
+    p.storia {
+        font-size: 10px;
+    }
+
+    p.trama {
+        font-size: 10px;
+    }
+
+    a.storia {
+        font-size: 12px;
+    }
+
+    a.trama {
+        font-size: 12px;
+    }
+}
+
+.elenco {
+    margin-top: 5px;
+    margin-right: 40px;
+    padding: 0;
+    /*font-family: "HarryPotter", serif;*/
+    font-family: 'Permanent Marker', cursive;
+    font-style: normal;
+    color: black;
+    font-size: 24px;
+}
+
+@media (max-width: 500px) {
+    .elenco {
+        font-size: 13px;
+    }
+}
